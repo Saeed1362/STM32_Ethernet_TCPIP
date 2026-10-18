@@ -1,0 +1,13 @@
+../Core/Src/eip_server.c:41:13:attach	8	static
+../Core/Src/eip_server.c:46:13:detach	8	static
+../Core/Src/eip_server.c:55:14:flush	16	static
+../Core/Src/eip_server.c:139:13:failed	0	static
+../Core/Src/eip_server.c:143:14:accepted	32	static
+../Core/Src/eip_server.c:50:14:drop.isra	16	static
+../Core/Src/eip_server.c:71:14:pump	176	static
+../Core/Src/eip_server.c:133:14:poll_client	8	static
+../Core/Src/eip_server.c:127:14:sent	8	static
+../Core/Src/eip_server.c:109:14:received	24	static
+../Core/Src/eip_server.c:35:6:EIP_LED_Set	0	static
+../Core/Src/eip_server.c:38:9:EIP_LED_Get	8	static
+../Core/Src/eip_server.c:157:7:EIP_Server_Init	16	static

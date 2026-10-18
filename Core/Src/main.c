@@ -25,6 +25,7 @@
 #include "tcp_server.h"
 #include "http_server.h"
 #include "sensor_server.h"
+#include "eip_server.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -94,10 +95,12 @@ int main(void)
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
   MX_LWIP_Init();
+  /* USER CODE BEGIN 2 */
+
   TCP_Server_Init();     // Port 5000
   HTTP_Server_Init();    // Port 80
   Sensor_Server_Init();  // Port 6000
-  /* USER CODE BEGIN 2 */
+  EIP_Server_Init();
 
   /* USER CODE END 2 */
 
