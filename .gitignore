@@ -1,0 +1,44 @@
+
+# STM32CubeIDE build outputs
+/Debug/
+/Release/
+
+# Compiled and intermediate files
+*.o
+*.d
+*.su
+*.cyclo
+*.elf
+*.hex
+*.bin
+*.map
+*.list
+*.lst
+*.srec
+
+# Temporary files
+*.tmp
+*.bak
+*~
+*.swp
+*.swo
+
+# STM32CubeIDE local settings and cache
+.metadata/
+.settings/
+.mxproject
+
+# IDE-generated logs
+*.log
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Python test files
+__pycache__/
+*.pyc
+
+# Python virtual environments
+.venv/
+venv/
