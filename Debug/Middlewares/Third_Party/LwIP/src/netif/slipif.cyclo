@@ -1,3 +1,0 @@
-../Middlewares/Third_Party/LwIP/src/netif/slipif.c:172:1:slipif_output_v4	8
-../Middlewares/Third_Party/LwIP/src/netif/slipif.c:360:1:slipif_init	4
-../Middlewares/Third_Party/LwIP/src/netif/slipif.c:426:1:slipif_poll	21
