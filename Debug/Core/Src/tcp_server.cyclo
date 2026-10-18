@@ -1,3 +1,0 @@
-../Core/Src/tcp_server.c:18:14:tcp_received	10
-../Core/Src/tcp_server.c:90:14:tcp_accepted_callback	2
-../Core/Src/tcp_server.c:106:6:TCP_Server_Init	4
