@@ -1,6 +1,0 @@
-../Core/Src/http_server.c:22:13:http_error	1
-../Core/Src/http_server.c:188:14:http_accept	4
-../Core/Src/http_server.c:30:13:http_close	3
-../Core/Src/http_server.c:63:14:http_recv	11
-../Core/Src/http_server.c:46:14:http_sent	3
-../Core/Src/http_server.c:214:6:HTTP_Server_Init	4

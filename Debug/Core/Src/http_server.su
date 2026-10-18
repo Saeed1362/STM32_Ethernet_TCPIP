@@ -1,6 +1,0 @@
-../Core/Src/http_server.c:22:13:http_error	0	static
-../Core/Src/http_server.c:188:14:http_accept	16	static
-../Core/Src/http_server.c:30:13:http_close	8	static
-../Core/Src/http_server.c:63:14:http_recv	864	static
-../Core/Src/http_server.c:46:14:http_sent	8	static
-../Core/Src/http_server.c:214:6:HTTP_Server_Init	8	static
