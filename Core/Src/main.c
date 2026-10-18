@@ -24,6 +24,7 @@
 /* USER CODE BEGIN Includes */
 #include "tcp_server.h"
 #include "http_server.h"
+#include "sensor_server.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -95,6 +96,7 @@ int main(void)
   MX_LWIP_Init();
   TCP_Server_Init();     // Port 5000
   HTTP_Server_Init();    // Port 80
+  Sensor_Server_Init();  // Port 6000
   /* USER CODE BEGIN 2 */
 
   /* USER CODE END 2 */
@@ -104,6 +106,7 @@ int main(void)
   while (1)
   {
 	  MX_LWIP_Process();
+	  Sensor_Server_Process();
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */

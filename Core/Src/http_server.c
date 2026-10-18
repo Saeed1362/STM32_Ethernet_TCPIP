@@ -5,7 +5,8 @@
 #include <stdio.h>
 
 #define HTTP_PORT 80
-#define HTTP_REQ_SIZE 1024
+#define HTTP_REQ_SIZE 1024 //Chrome and Edge typically send more headers, so size value less than 1024 may cause
+						   //web page loading problems
 
 static struct tcp_pcb *http_pcb;
 
