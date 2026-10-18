@@ -4,6 +4,7 @@
 "./Core/Src/syscalls.o"
 "./Core/Src/sysmem.o"
 "./Core/Src/system_stm32f7xx.o"
+"./Core/Src/tcp_server.o"
 "./Core/Startup/startup_stm32f750n8hx.o"
 "./Drivers/BSP/Components/lan8742/lan8742.o"
 "./Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal.o"
