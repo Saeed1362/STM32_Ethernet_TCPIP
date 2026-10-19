@@ -384,32 +384,32 @@ Enter **one filter expression at a time** in Wireshark's display filter bar. Lin
 ---
 
 **Platform:** STM32F7508-DK · STM32CubeIDE · LwIP Raw API · LAN8742 PHY · Direct Ethernet with Windows
-<<<<<<< HEAD
-=======
 
 ### Lab 0 — Ethernet bring-up / Ping demo
 
-https://github.com/user-attachments/assets/15ddb0ae-a346-4596-b974-2bd5a73daa5a
+https://github.com/user-attachments/assets/59d5ac05-3c11-49d0-bb08-ddd2e876b783
 
 
 ### Lab 1 — TCP LED controller demo
 
-https://github.com/user-attachments/assets/6b9c869b-6b42-4142-9f06-7a2b071fae91
+https://github.com/user-attachments/assets/22467dac-713b-49d3-b586-8b7a4451b9c7
 
 
 ### Lab 2 — HTTP web server demo
 
-https://github.com/user-attachments/assets/c947aecf-aa2e-46b0-a8a5-6239fca365cb
+https://github.com/user-attachments/assets/588d7796-3967-4550-bdac-dd8c3e6ec591
 
 
 ### Lab 3 — TCP sensor streaming demo
 
-https://github.com/user-attachments/assets/ac675e46-139d-455e-821f-a708115450b3
+https://github.com/user-attachments/assets/c182b03e-bc8f-4388-bd31-24b3747506fa
 
 
 ### Lab 4 — EtherNet/IP explicit messaging demo
 
-https://github.com/user-attachments/assets/7e0bd3a6-0a08-4ca2-8cc4-67bbce2f0652
+https://github.com/user-attachments/assets/1f7b4736-cb28-462b-a821-cb33e8ff0bbf
+
+
 
 
 
