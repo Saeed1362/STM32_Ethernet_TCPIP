@@ -80,6 +80,7 @@ Configure the laptop's **physical Ethernet adapter** (not VMware VMnet1/VMnet8) 
 
 On the STM32, configure the static IPv4 settings in STM32CubeMX / LwIP and build and flash the firmware. These addresses are examples: change **both the documentation and test commands** if you use another subnet. Wi-Fi may stay on for Internet access; the Ethernet cable is used for board traffic.
 
+<<<<<<< HEAD
 ### Firmware startup
 
 The standalone LwIP build must initialize the network interface and **continue processing packets**. Initialize the server(s) included in the selected branch. The example below shows a combined build for reference; it is not a requirement for every lab branch:
@@ -108,6 +109,8 @@ while (1) {
 
 Only include `eip_server.h` and call `EIP_Server_Init()` where the EtherNet/IP module is present. Similarly, only call `Sensor_Server_Process()` if the sensor module is present and initialized. Keep custom includes and initialization inside CubeMX USER CODE sections. The function names assume the corresponding modules are included in your build. Do not add `MX_ETH_Init()` unless your particular CubeMX-generated project actually defines it; Ethernet HAL initialization may occur in `ethernetif.c`. Avoid long blocking `HAL_Delay()` calls in the processing loop. For your onboard LED, confirm whether the GPIO output is active-high or active-low.
 
+=======
+>>>>>>> 78d97d9b84a1f78f1aa2267fba0e3beefcddc6a0
 ## Lab 0 — Ethernet bring-up / Ping
 
 **Purpose:** Check Ethernet link, ARP, IPv4 and ICMP before testing TCP. Run this check after flashing any configured lab branch; no separate bring-up branch is shown in this repository.
@@ -381,3 +384,39 @@ Enter **one filter expression at a time** in Wireshark's display filter bar. Lin
 ---
 
 **Platform:** STM32F7508-DK · STM32CubeIDE · LwIP Raw API · LAN8742 PHY · Direct Ethernet with Windows
+<<<<<<< HEAD
+=======
+
+### Lab 0 — Ethernet bring-up / Ping demo
+
+https://github.com/user-attachments/assets/15ddb0ae-a346-4596-b974-2bd5a73daa5a
+
+
+### Lab 1 — TCP LED controller demo
+
+https://github.com/user-attachments/assets/6b9c869b-6b42-4142-9f06-7a2b071fae91
+
+
+### Lab 2 — HTTP web server demo
+
+https://github.com/user-attachments/assets/c947aecf-aa2e-46b0-a8a5-6239fca365cb
+
+
+### Lab 3 — TCP sensor streaming demo
+
+https://github.com/user-attachments/assets/ac675e46-139d-455e-821f-a708115450b3
+
+
+### Lab 4 — EtherNet/IP explicit messaging demo
+
+https://github.com/user-attachments/assets/7e0bd3a6-0a08-4ca2-8cc4-67bbce2f0652
+
+
+
+
+
+
+
+
+
+>>>>>>> 78d97d9b84a1f78f1aa2267fba0e3beefcddc6a0
