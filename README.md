@@ -80,37 +80,12 @@ Configure the laptop's **physical Ethernet adapter** (not VMware VMnet1/VMnet8) 
 
 On the STM32, configure the static IPv4 settings in STM32CubeMX / LwIP and build and flash the firmware. These addresses are examples: change **both the documentation and test commands** if you use another subnet. Wi-Fi may stay on for Internet access; the Ethernet cable is used for board traffic.
 
-<<<<<<< HEAD
-### Firmware startup
 
-The standalone LwIP build must initialize the network interface and **continue processing packets**. Initialize the server(s) included in the selected branch. The example below shows a combined build for reference; it is not a requirement for every lab branch:
-
-```c
-// In the USER CODE Includes section:
-#include "eip_server.h"
-
-MX_GPIO_Init();
-MX_LWIP_Init();
-
-TCP_Server_Init();     // LED commands, port 5000
-HTTP_Server_Init();    // Web server, port 80
-Sensor_Server_Init();  // Streaming, port 6000
-
-// In USER CODE BEGIN 2, after MX_LWIP_Init():
-if (EIP_Server_Init() != ERR_OK) {  // EtherNet/IP, port 44818
-    Error_Handler();
-}
-
-while (1) {
-    MX_LWIP_Process();
-    Sensor_Server_Process();
-}
-```
 
 Only include `eip_server.h` and call `EIP_Server_Init()` where the EtherNet/IP module is present. Similarly, only call `Sensor_Server_Process()` if the sensor module is present and initialized. Keep custom includes and initialization inside CubeMX USER CODE sections. The function names assume the corresponding modules are included in your build. Do not add `MX_ETH_Init()` unless your particular CubeMX-generated project actually defines it; Ethernet HAL initialization may occur in `ethernetif.c`. Avoid long blocking `HAL_Delay()` calls in the processing loop. For your onboard LED, confirm whether the GPIO output is active-high or active-low.
 
 =======
->>>>>>> 78d97d9b84a1f78f1aa2267fba0e3beefcddc6a0
+
 ## Lab 0 — Ethernet bring-up / Ping
 
 **Purpose:** Check Ethernet link, ARP, IPv4 and ICMP before testing TCP. Run this check after flashing any configured lab branch; no separate bring-up branch is shown in this repository.
@@ -409,14 +384,3 @@ https://github.com/user-attachments/assets/c182b03e-bc8f-4388-bd31-24b3747506fa
 
 https://github.com/user-attachments/assets/1f7b4736-cb28-462b-a821-cb33e8ff0bbf
 
-
-
-
-
-
-
-
-
-
-
->>>>>>> 78d97d9b84a1f78f1aa2267fba0e3beefcddc6a0
